@@ -4,7 +4,7 @@ import android.util.Log
 import javax.inject.Inject
 
 const val TAG = "Dagger Car"
-class Car @Inject constructor(val wheels: Wheel, val engine: Engine) {
+class Car @Inject constructor(val wheels: Wheels, val engine: Engine) {
 
     fun drive(){
         Log.e(TAG, "I am driving")
