@@ -2,10 +2,11 @@ package com.dnyanesh.daggerpractice
 
 import dagger.Binds
 import dagger.Module
+import dagger.Provides
 
 @Module
-abstract class DieselEngineModule {
+class DieselEngineModule(val horsePower: Int) {
 
-    @Binds
-    abstract fun bindDieselEngine(engine: DieselEngine): Engine
+    @Provides
+    fun provideDieselEngine(): Engine = DieselEngine(horsePower)
 }

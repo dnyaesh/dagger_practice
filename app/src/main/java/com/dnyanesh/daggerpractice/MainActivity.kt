@@ -12,7 +12,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val carComponent: CarComponent = DaggerCarComponent.create()
+        val carComponent: CarComponent = DaggerCarComponent
+                        .builder()
+                        .dieselEngineModule(DieselEngineModule(100))
+                        .build()
         carComponent.inject(this)
 
         car.drive()
