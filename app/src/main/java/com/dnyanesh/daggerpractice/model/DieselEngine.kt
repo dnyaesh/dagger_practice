@@ -1,7 +1,6 @@
-package com.dnyanesh.daggerpractice
+package com.dnyanesh.daggerpractice.model
 
 import android.util.Log
-import javax.inject.Inject
 
 class DieselEngine(val horsePower: Int): Engine {
     override fun start() {

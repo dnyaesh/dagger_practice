@@ -2,6 +2,10 @@ package com.dnyanesh.daggerpractice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.dnyanesh.daggerpractice.di.CarComponent
+import com.dnyanesh.daggerpractice.di.DaggerCarComponent
+import com.dnyanesh.daggerpractice.di.DieselEngineModule
+import com.dnyanesh.daggerpractice.model.Car
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {

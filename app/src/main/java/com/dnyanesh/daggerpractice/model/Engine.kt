@@ -1,4 +1,4 @@
-package com.dnyanesh.daggerpractice
+package com.dnyanesh.daggerpractice.model
 
 import javax.inject.Inject
 

@@ -1,5 +1,8 @@
-package com.dnyanesh.daggerpractice
+package com.dnyanesh.daggerpractice.di
 
+import com.dnyanesh.daggerpractice.model.Rims
+import com.dnyanesh.daggerpractice.model.Tires
+import com.dnyanesh.daggerpractice.model.Wheels
 import dagger.Module
 import dagger.Provides
 
@@ -14,7 +17,7 @@ class WheelsModule {
 
         @JvmStatic
         @Provides
-        fun providesTires(): Tires{
+        fun providesTires(): Tires {
             val tires = Tires()
             tires.inflateTires()
             return tires

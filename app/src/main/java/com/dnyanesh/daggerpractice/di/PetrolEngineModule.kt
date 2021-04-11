@@ -1,5 +1,7 @@
-package com.dnyanesh.daggerpractice
+package com.dnyanesh.daggerpractice.di
 
+import com.dnyanesh.daggerpractice.model.Engine
+import com.dnyanesh.daggerpractice.model.PetrolEngine
 import dagger.Binds
 import dagger.Module
 
